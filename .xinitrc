@@ -6,11 +6,11 @@
 
 # Daemons
 thunar --daemon &
-beagled &
+strigidaemon &
 
 # Compositing
 xcompmgr &
-#cairo_compmgr &
+#cairo-compmgr &
 
 # Configurations
 numlockx &
@@ -24,5 +24,6 @@ glista &
 pyvolwheel &
 adeskmenu &
 klipper &
+tracker-status-icon &
 
-exec xmonad
+exec ck-launch-session xmonad
