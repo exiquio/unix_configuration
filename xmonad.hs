@@ -37,7 +37,7 @@ main = do
 						className =? "Skype" --> doFloat,
 						className =? "Glista" --> doShift "office",
 						className =? "Glista" --> doFloat,
-						className =? "Search" --> doFloat, 
+						className =? "Tracker-search-tool" --> doFloat, 
 						className =? "Thunar" --> doFloat,
 						className =? "Gimp" --> doFloat,
 						className =? "Feh" --> doFloat,
@@ -74,7 +74,7 @@ main = do
 			myKeys (XConfig {modMask = modm}) = M.fromList $
 				[
 					((modm, xK_t), spawn "glista"),
-					((modm, xK_s), spawn "beagle-search"),
+					((modm, xK_s), spawn "tracker-search-tool"),
 					((modm, xK_f), spawn "thunar"),
 					((modm, xK_p), spawn "dmenu_run -fn  'xft:-schumacher-clean-bold-r-normal--10-129-75-75-c-80-*-*' -nb '#000000' -nf '#FFFFFF' -sb '#000000' -sf '#FFFFFF' -i"),
 					((modm, xK_l), spawn "hslock"),
