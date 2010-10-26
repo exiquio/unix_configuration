@@ -24,6 +24,5 @@ glista &
 pyvolwheel &
 adeskmenu &
 klipper &
-tracker-status-icon &
 
 exec ck-launch-session xmonad

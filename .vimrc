@@ -26,10 +26,9 @@ syntax keyword xTodo TODO contained
 syntax match xComment /%.*/ contains=xTodo
 syntax keyword xNote NOTE contained
 syntax match xComment /%.*/ contains=xNote
-"highlight WhiteSpaceEOL ctermbg=darkgreen guibg=lightgreen 
-"match WhiteSpaceEOL /^\s*\ \s*\|\s\+$/ 
-"autocmd WinEnter * match WhiteSpaceEOL /^\s*\ \s*\|\s\+$/
-" colorscheme metacosm " my theme
+highlight WhiteSpaceEOL ctermbg=darkgreen guibg=lightgreen 
+match WhiteSpaceEOL /^\s*\ \s*\|\s\+$/ 
+autocmd WinEnter * match WhiteSpaceEOL /^\s*\ \s*\|\s\+$/
 "
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " " Files/Backups
