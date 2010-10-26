@@ -31,6 +31,8 @@ main = do
 						className =? "MPlayer" --> doShift "media",
 						className =? "Smplayer" --> doShift "media",
 						className =? "Okular" --> doShift "misc",
+						className =? "Skype" --> doShift "office",
+						className =? "Glista" --> doShift "office",
 						className =? "Search" --> doFloat, 
 						className =? "MPlayer" --> doFloat,
 						className =? "Thunar" --> doFloat,
@@ -80,5 +82,5 @@ main = do
 					((shiftMask, xK_F6), spawn "~/Scripts/brightness.rb down"),
 					((modm, xK_F7), spawn "aumix -v +3"),
 					((modm, xK_F8), spawn "amixer set Master toggle"),
-					((0, xK_Print), spawn "scrot -e 'mv $f ~/Images/Screenshots'")
+					((0, xK_Print), spawn "scrot -e 'mv $f ~/Pictures/Screenshots'")
 				]

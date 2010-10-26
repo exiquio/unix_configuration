@@ -1,14 +1,3 @@
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Stuff I have decided I don't like
-" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" "set ignorecase -- turns out, I like case sensitivity 
-" "set list " turns out, I don't like listchars -- show chars on end of line,
-" whitespace, etc
-" "autocmd GUIEnter * :simalt ~x -- having it auto maximize the screen is
-" annoying
-" "autocmd BufEnter * :lcd %:p:h -- switch to current dir (breaks some
-" scripts)
-"
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " " General
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

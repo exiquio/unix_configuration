@@ -13,10 +13,14 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-# User Added
+
+###########################################################
+# User Added #
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
 autoload -U promptinit
 promptinit
-prompt elite white green 
+prompt elite green white 
 
 # Exports
 export GREP_COLOR="1;33"
@@ -27,7 +31,7 @@ export LESS_TERMCAP_se=$'\e[0m'
 export LESS_TERMCAP_so=$'\e[1;44;33m'
 export LESS_TERMCAP_ue=$'\e[0m'
 export LESS_TERMCAP_us=$'\e[1;32m'
-export PATH="$PATH:/home/ghost/Scripts:/opt/android-sdk/tools"
+export PATH="$PATH:/home/exiquio/bin:/opt/android-sdk/tools"
 export IRCNICK="exiquio"
 export IRCSERVER="irc.freenode.net"
 export EDITOR="vim"
