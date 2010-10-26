@@ -15,7 +15,7 @@ main = do
 	xmonad $ defaultConfig
 		{
 			terminal = "urxvt",
-			workspaces = ["web", "office", "media", "code", "misc", "admin"],
+			workspaces = ["web", "office", "media", "code", "misc", "admin", "search"],
 			normalBorderColor = "#000000",
 			focusedBorderColor = "#FFFFFF",
 			manageHook =
@@ -37,6 +37,7 @@ main = do
 						className =? "Skype" --> doFloat,
 						className =? "Glista" --> doShift "office",
 						className =? "Glista" --> doFloat,
+						className =? "Strigiclient" --> doShift "search",
 						className =? "Strigiclient" --> doFloat, 
 						className =? "Thunar" --> doFloat,
 						className =? "Gimp" --> doFloat,
