@@ -20,7 +20,6 @@ sh .fehbg &
 # Startup apps
 trayer --edge top --align right --width 15 --height 10 --transparent true --alpha 100 --tint 0 &
 #wicd-client &
-glista &
 pyvolwheel &
 adeskmenu &
 klipper &

@@ -35,7 +35,6 @@ main = do
 						className =? "Skype" --> doFloat,
 						className =? "Glista" --> doShift "office",
 						className =? "Glista" --> doFloat,
-						className =? "Strigiclient" --> doShift "misc",
 						className =? "Strigiclient" --> doFloat,
 						className =? "Gimp" --> doShift "misc",
 						className =? "Gimp" --> doFloat,
