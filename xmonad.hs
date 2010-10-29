@@ -35,7 +35,7 @@ main = do
 						className =? "Skype" --> doFloat,
 						className =? "Glista" --> doShift "office",
 						className =? "Glista" --> doFloat,
-						className =? "Strigiclient" --> doFloat,
+						className =? "Catfish.pyc" --> doFloat,
 						className =? "Gimp" --> doShift "misc",
 						className =? "Gimp" --> doFloat,
 						className =? "Alsamixer-qt4" --> doShift "media",
@@ -73,7 +73,7 @@ main = do
 			myKeys (XConfig {modMask = modm}) = M.fromList $
 				[
 					((modm, xK_t), spawn "glista"),
-					((modm, xK_s), spawn "strigiclient"),
+					((modm, xK_s), spawn "catfish"),
 					((modm, xK_f), spawn "thunar"),
 					((modm, xK_p), spawn "dmenu_run -fn  'xft:-schumacher-clean-bold-r-normal--10-129-75-75-c-80-*-*' -nb '#000000' -nf '#FFFFFF' -sb '#000000' -sf '#FFFFFF' -i"),
 					((modm, xK_l), spawn "hslock"),

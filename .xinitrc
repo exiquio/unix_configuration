@@ -6,7 +6,6 @@
 
 # Daemons
 thunar --daemon &
-strigidaemon &
 
 # Compositing
 xcompmgr &
