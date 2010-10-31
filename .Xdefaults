@@ -1,10 +1,11 @@
 URxvt.buffered: true
+URxvt*saveLines:5000
 URxvt.depth: 32
 URxvt.background: rgba:0000/0000/0000/cccc
 URxvt.foreground: white
 URxvt.cursorColor: green
 URxvt.underlineColor: yellow
-URxvt.font: xft:Clean:pixelsize=8:antialias=false
-URxvt.boldFont: xft:Clean:bold:pixelsize=8:antialias=false
+URxvt.font: xft:Dejavu Sans Mono:pixelsize=10:antialias=true
+URxvt.boldFont: xft:Dejavu Sans Mono:bold:pixelsize=10:antialias=true
 URxvt.urlLauncher: /usr/bin/chromium
 URxvt.scrollBar: false
