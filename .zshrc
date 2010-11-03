@@ -31,7 +31,6 @@ export LESS_TERMCAP_se=$'\e[0m'
 export LESS_TERMCAP_so=$'\e[1;44;33m'
 export LESS_TERMCAP_ue=$'\e[0m'
 export LESS_TERMCAP_us=$'\e[1;32m'
-export PATH="$PATH:/home/exiquio/bin:/opt/android-sdk/tools"
 export IRCNICK="exiquio"
 export IRCSERVER="irc.freenode.net"
 export EDITOR="vim"
@@ -43,3 +42,14 @@ alias ls='ls --color=auto'
 
 # Evals
 eval `dircolors -b`
+
+# DWT
+JDK_HOME=${JAVE_HOME}
+JRUBY_HOME=/opt/local/jruby
+DEPOT=${HOME}/depot
+export JDK_HOME JRUBY_HOME DEPOT
+C2LIB=${DEPOT}/c2_lib_trunk/lib
+C2ENV=DEV
+STRATA_HOME=${DEPOT}/c2_connector_trunk/src/ruby
+export C2LIB C2ENV STRATA_HOME
+export PATH="$PATH:/home/exiquio/bin:/home/exiquio/bin/charles/bin:/opt/android-sdk/tools:${JRUBY_HOME}/bin"

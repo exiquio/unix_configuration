@@ -77,10 +77,10 @@ main = do
 					((modm, xK_p), spawn "dmenu_run -fn  'xft:Dejavu Sans Mono-7:antialiased=true' -nb '#000000' -nf '#FFFFFF' -sb '#000000' -sf '#FFFFFF' -i"),
 					((modm, xK_l), spawn "hslock"),
 					((modm, xK_F1), spawn "eject"),
-					((modm, xK_F3), spawn "aumix -v -3"),
+					((modm, xK_F3), spawn "aumix -v -2"),
 					((modm, xK_F6), spawn "~/bin/brightness.rb up"),
 					((shiftMask, xK_F6), spawn "~/bin/brightness.rb down"),
-					((modm, xK_F7), spawn "aumix -v +3"),
+					((modm, xK_F7), spawn "aumix -v +2"),
 					((modm, xK_F8), spawn "amixer set Master toggle"),
 					((0, xK_Print), spawn "scrot -e 'mv $f ~/Pictures/Screenshots'")
 				]
