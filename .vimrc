@@ -26,6 +26,8 @@ syntax keyword xTodo TODO contained
 syntax match xComment /%.*/ contains=xTodo
 syntax keyword xNote NOTE contained
 syntax match xComment /%.*/ contains=xNote
+syntax kewword xRemove REMOVE contained
+syntax match xComment /%.*/ contains=xRemove
 highlight WhiteSpaceEOL ctermbg=darkgreen guibg=lightgreen 
 match WhiteSpaceEOL /^\s*\ \s*\|\s\+$/ 
 autocmd WinEnter * match WhiteSpaceEOL /^\s*\ \s*\|\s\+$/
