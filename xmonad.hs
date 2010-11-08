@@ -28,8 +28,8 @@ main = do
 					[
 						className =? "Chromium" --> doShift "web",
 						className =? "Amarok" --> doShift "media",
-						className =? "Mplayer" --> doShift "media",
-						className =? "Mplayer" --> doFloat,
+						className =? "MPlayer" --> doShift "media",
+						className =? "MPlayer" --> doFloat,
 						className =? "Okular" --> doShift "misc",
 						className =? "Skype" --> doShift "office",
 						className =? "Skype" --> doFloat,
@@ -42,9 +42,7 @@ main = do
 						className =? "Visual-regexp" --> doFloat,
 						className =? "Adeskmenu" --> doFloat,
 						className =? "Pyvolwheel" --> doFloat,
-						className =? "Thunar" --> doFloat,
-						className =? "Gui_test.rb" --> doShift "misc",
-						className =? "Gui_test.rb" --> doFloat
+						className =? "Thunar" --> doFloat
 					]
 				<+> manageDocks,
 			layoutHook = myLayout,
