@@ -7,7 +7,7 @@ unsetopt autocd beep
 bindkey -v
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
-zstyle :compinstall filename '/home/exiquio/.zshrc'
+zstyle :compinstall filename '${HOME}/.zshrc'
 
 autoload -Uz compinit
 compinit
@@ -34,6 +34,16 @@ export LESS_TERMCAP_us=$'\e[1;32m'
 export IRCNICK="exiquio"
 export IRCSERVER="irc.freenode.net"
 export EDITOR="vim"
+export BROWSER="chromium"
+export JDK_HOME=${JAVA_HOME}
+export JRE_HOME=${JAVA_HOME}
+export JRUBY_HOME=/opt/local/jruby
+export CATALINA_HOME=/srv/tomcat
+export DEPOT=${HOME}/depot
+export C2LIB=${DEPOT}/c2_lib_trunk/lib
+export C2ENV=DEV
+export STRATA_HOME=${DEPOT}/c2_connector_trunk/src/ruby
+export PATH="$PATH:${HOME}/bin:/opt/local/charles/bin:/opt/android-sdk/tools:${JRUBY_HOME}/bin:/usr/share/java/apache-ant/bin:${CATALINA_HOME}/bin"
 
 # Aliases
 alias cp='cp -v'
@@ -42,14 +52,3 @@ alias ls='ls --color=auto'
 
 # Evals
 eval `dircolors -b`
-
-# DWT
-JDK_HOME=${JAVE_HOME}
-JRUBY_HOME=/opt/local/jruby
-DEPOT=${HOME}/depot
-export JDK_HOME JRUBY_HOME DEPOT
-C2LIB=${DEPOT}/c2_lib_trunk/lib
-C2ENV=DEV
-STRATA_HOME=${DEPOT}/c2_connector_trunk/src/ruby
-export C2LIB C2ENV STRATA_HOME
-export PATH="$PATH:/home/exiquio/bin:/home/exiquio/bin/charles/bin:/opt/android-sdk/tools:${JRUBY_HOME}/bin"
