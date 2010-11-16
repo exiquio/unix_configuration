@@ -43,7 +43,10 @@ export DEPOT=${HOME}/depot
 export C2LIB=${DEPOT}/c2_lib_trunk/lib
 export C2ENV=DEV
 export STRATA_HOME=${DEPOT}/c2_connector_trunk/src/ruby
-export PATH="$PATH:${HOME}/bin:/opt/local/charles/bin:/opt/android-sdk/tools:${JRUBY_HOME}/bin:/usr/share/java/apache-ant/bin:${CATALINA_HOME}/bin"
+export CHARLES_HOME=/opt/local/charles
+export ADK_HOME=/opt/android-sdk
+export ANT_HOME=/usr/share/java/apache-ant
+export PATH="${PATH}:${HOME}/bin:$CHARLES_HOME/bin:${ADK_HOME}/tools:${JRUBY_HOME}/bin:${JAVA_HOME}/bin:${ANT_HOME}/bin:${CATALINA_HOME}/bin"
 
 # Aliases
 alias cp='cp -v'

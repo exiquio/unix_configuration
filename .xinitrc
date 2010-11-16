@@ -17,7 +17,7 @@ xsetroot -cursor_name left_ptr &
 sh .fehbg &
 
 # Startup apps
-trayer --edge top --align right --width 15 --height 10 --transparent true --alpha 100 --tint 0 &
+trayer --edge top --align right --widthtype percent --width 15 --heighttype pixel --height 10 --SetPartialStrut true --transparent false --alpha 0 --tint 0x000000 --expand false &
 #wicd-client &
 pyvolwheel &
 adeskmenu &
