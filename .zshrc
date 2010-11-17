@@ -46,12 +46,14 @@ export STRATA_HOME=${DEPOT}/c2_connector_trunk/src/ruby
 export CHARLES_HOME=/opt/local/charles
 export ADK_HOME=/opt/android-sdk
 export ANT_HOME=/usr/share/java/apache-ant
-export PATH="${PATH}:${HOME}/bin:$CHARLES_HOME/bin:${ADK_HOME}/tools:${JRUBY_HOME}/bin:${JAVA_HOME}/bin:${ANT_HOME}/bin:${CATALINA_HOME}/bin"
+export GOOGLE_DESKTOP_HOME=/opt/google/desktop
+export PATH="${PATH}:${HOME}/bin:$CHARLES_HOME/bin:${ADK_HOME}/tools:${JRUBY_HOME}/bin:${JAVA_HOME}/bin:${ANT_HOME}/bin:${CATALINA_HOME}/bin:${GOOGLE_DESKTOP_HOME}/bin"
 
 # Aliases
 alias cp='cp -v'
 alias grep='grep -i --color=auto'
 alias ls='ls --color=auto'
+alias open='xdg-open'
 
 # Evals
 eval `dircolors -b`
