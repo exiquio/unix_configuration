@@ -8,8 +8,8 @@
 thunar --daemon &
 
 # Compositing
-xcompmgr &
-#cairo-compmgr &
+#xcompmgr &
+cairo-compmgr &
 
 # Configurations
 numlockx &
