@@ -28,21 +28,24 @@ main = do
 					[
 						className =? "Chromium" --> doShift "web",
 						className =? "Amarok" --> doShift "media",
-						className =? "MPlayer" --> doShift "media",
-						className =? "MPlayer" --> doFloat,
+						className =? "Mplayer" --> doShift "media",
+						className =? "Mplayer" --> doFloat,
 						className =? "Okular" --> doShift "misc",
 						className =? "Skype" --> doShift "office",
 						className =? "Skype" --> doFloat,
 						className =? "Catfish.pyc" --> doFloat,
 						className =? "Gimp" --> doShift "misc",
-						className =? "gimp" --> doFloat,
+						className =? "Gimp" --> doFloat,
 						className =? "Alsamixer-qt4" --> doShift "media",
 						className =? "Alsamixer-qt4" --> doFloat,
 						className =? "Visual-regexp" --> doShift "code",
 						className =? "Visual-regexp" --> doFloat,
 						className =? "Adeskmenu" --> doFloat,
 						className =? "Pyvolwheel" --> doFloat,
-						className =? "Thunar" --> doFloat
+						className =? "Thunar" --> doFloat,
+						className =? "Gui_test.rb" --> doShift "misc",
+						className =? "Gui_test.rb" --> doFloat,
+						className =? "Krunner" --> doIgnore
 					]
 				<+> manageDocks,
 			layoutHook = myLayout,
