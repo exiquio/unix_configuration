@@ -48,8 +48,9 @@ export CHARLES_HOME="/opt/local/charles"
 export ADK_HOME="/opt/android-sdk"
 export ANT_HOME="/usr/share/java/apache-ant"
 export PERSONAL_CODE_HOME="${CODE_HOME}/Personal"
+export CELTX_HOME="/opt/celtx"
 export REPOS="${DWT_REPO}/dwt:${C2LIB}:${C2_CONNECTORS}:${PERSONAL_CODE_HOME}/Linux-Configuration-Files:${PERSONAL_CODE_HOME}/Amix_R:${PERSONAL_CODE_HOME}/ExLib:${PERSONAL_CODE_HOME}/LinuxScripts"
-export PATH="${PATH}:${HOME}/bin:$CHARLES_HOME/bin:${ADK_HOME}/tools:${JRUBY_HOME}/bin:${JAVA_HOME}/bin:${ANT_HOME}/bin:${CATALINA_HOME}/bin"
+export PATH="${PATH}:${HOME}/bin:$CELTX_HOME:$CHARLES_HOME/bin:${ADK_HOME}/tools:${JRUBY_HOME}/bin:${JAVA_HOME}/bin:${ANT_HOME}/bin:${CATALINA_HOME}/bin"
 
 # Aliases
 alias cp='cp -v'
