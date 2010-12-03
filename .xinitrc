@@ -6,6 +6,7 @@
 
 # Daemons
 thunar --daemon &
+kwalletd &
 
 # Compositing
 #xcompmgr &
@@ -22,5 +23,6 @@ trayer --edge top --align right --widthtype percent --width 15 --heighttype pixe
 pyvolwheel &
 adeskmenu &
 klipper &
+kwalletmanager &
 
 exec ck-launch-session xmonad
