@@ -1,7 +1,7 @@
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
-HISTSIZE=1000
-SAVEHIST=1000
+HISTSIZE=10000
+SAVEHIST=10000
 setopt appendhistory extendedglob nomatch notify
 unsetopt autocd beep
 bindkey -v
@@ -20,7 +20,7 @@ compinit
 
 autoload -U promptinit
 promptinit
-prompt elite green white 
+prompt elite green white
 
 # Exports
 export GREP_COLOR="1;33"
@@ -43,7 +43,8 @@ export CODE_HOME="${HOME}/Code"
 export DWT_REPO="${CODE_HOME}/DWT"
 export C2LIB="${DWT_REPO}/c2_lib_trunk/lib"
 export C2ENV="DEV"
-export C2_CONNECTORS="${DWT_REPO}/c2_connector_trunk"
+export C2_CONNECTOR_HOME="${DWT_REPO}/c2_connector_trunk"
+export C2_CONNECTORS="${C2_CONNECTOR_HOME}/connector"
 export STRATA_HOME="${C2_CONNECTORS}/ruby"
 export C2_TEST_BASEDIR="${STRATA_HOME}"
 export CHARLES_HOME="/opt/local/charles"
@@ -51,8 +52,8 @@ export ADK_HOME="/opt/android-sdk"
 export ANT_HOME="/usr/share/java/apache-ant"
 export PERSONAL_CODE_HOME="${CODE_HOME}/Personal"
 export CELTX_HOME="/opt/celtx"
-export REPOS="${DWT_REPO}/dwt:${C2LIB}:${C2_CONNECTORS}:${PERSONAL_CODE_HOME}/Linux-Configuration-Files:${PERSONAL_CODE_HOME}/Amix_R:${PERSONAL_CODE_HOME}/ExLib:${PERSONAL_CODE_HOME}/LinuxScripts"
-export PATH="${PATH}:${HOME}/bin:$CELTX_HOME:$CHARLES_HOME/bin:${ADK_HOME}/tools:${JRUBY_HOME}/bin:${JAVA_HOME}/bin:${ANT_HOME}/bin:${CATALINA_HOME}/bin"
+export REPOS="${DWT_REPO}/dwt:${C2LIB}:${C2_CONNECTOR_HOME}:${PERSONAL_CODE_HOME}/Linux-Configuration-Files:${PERSONAL_CODE_HOME}/LinuxScripts:${PERSONAL_CODE_HOME}/BodyBuilder"
+export PATH="${PATH}:${HOME}/bin:$CELTX_HOME:$CHARLES_HOME/bin:${ADK_HOME}/tools:${ADK_HOME}/platform-tools:${JRUBY_HOME}/bin:${JAVA_HOME}/bin:${ANT_HOME}/bin:${CATALINA_HOME}/bin"
 
 # Aliases
 alias cp='cp -v'

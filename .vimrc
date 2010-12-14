@@ -15,6 +15,7 @@ let Tlist_Exit_OnlyWindow=3
 let Tlist_Auto_Highlight_Tag=1
 let Tlist_Auto_Update=1
 let Tlist_Process_File_Always=1
+set paste
 " not be
 "
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -28,8 +29,8 @@ syntax keyword xNote NOTE contained
 syntax match xComment /%.*/ contains=xNote
 syntax keyword xRemove REMOVE contained
 syntax match xComment /%.*/ contains=xRemove
-highlight WhiteSpaceEOL ctermbg=darkgreen guibg=lightgreen 
-match WhiteSpaceEOL /^\s*\ \s*\|\s\+$/ 
+highlight WhiteSpaceEOL ctermbg=darkgreen guibg=lightgreen
+match WhiteSpaceEOL /^\s*\ \s*\|\s\+$/
 autocmd WinEnter * match WhiteSpaceEOL /^\s*\ \s*\|\s\+$/
 "
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -45,7 +46,7 @@ set directory=~/.vimfiles/temp " directory is the directory for temp file
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " set lsp=0 " space it out a little more (easier to read)
 " set wildmenu " turn on wild menu
-set ruler " Always show current positions along the bottom 
+set ruler " Always show current positions along the bottom
 " set cmdheight=2 " the command bar is 2 high
 "set number " turn on line numbers
 set lz " do not redraw while running macros (much faster) (LazyRedraw)
@@ -53,15 +54,17 @@ set lz " do not redraw while running macros (much faster) (LazyRedraw)
 set backspace=2 " make backspace work normal
 " set whichwrap+=<,>,h,l  " backspace and cursor keys wrap to
 " set mouse=a " use mouse everywhere
-" set shortmess=atI " shortens messages to avoid 'press a key' prompt 
+" set shortmess=atI " shortens messages to avoid 'press a key' prompt
 " set report=0 " tell us when anything is changed via :...
 set noerrorbells " don't make noise
 " make the splitters between windows be blank
-" set fillchars=vert:\ ,stl:\ ,stlnc:\ 
+" set fillchars=vert:\ ,stl:\ ,stlnc:\
 "
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " " Visual Cues
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+highlight OverLength ctermbg=darkgreen ctermfg=white guibg=#000000
+match OverLength /\%81v.\+/
 set showmatch " show matching brackets
 set mat=10 " how many tenths of a second to blink matching brackets for
 set nohlsearch " do not highlight searched for phrases
@@ -78,13 +81,13 @@ set laststatus=2" always show the status line
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " set fo=tcrqn " See Help (complex)
 set ai " autoindent
-set si " smartindent 
+set si " smartindent
 "set cindent " do c-style indenting
 set tabstop=2 " tab spacing (settings below are just to unify it
 set softtabstop=2 " unify
-set shiftwidth=2 " unify 
+set shiftwidth=2 " unify
 set noexpandtab " real tabs please!
-set nowrap " do not wrap lines  
+set nowrap " do not wrap lines
 set smarttab " use tabs at the start of a line, spaces elsewhere """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " " File Explorer
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -98,7 +101,7 @@ let g:winManagerWidth=35 " How wide should it be( pixels)
 let g:winManagerWindowLayout = 'FileExplorer,TagsExplorer|BufExplorer' "
 " What windows should it
 "
-"  """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " " Minibuf
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:miniBufExplTabWrap = 1 " make tabs show complete (no broken on two
