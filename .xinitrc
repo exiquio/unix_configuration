@@ -4,13 +4,13 @@
 #
 # Executed by startx (run your window manager from here)
 
+# Compositing
+cairo-compmgr &
+
 # Daemons
+dropboxd &
 thunar --daemon &
 kwalletd &
-
-# Compositing
-#xcompmgr &
-cairo-compmgr &
 
 # Configurations
 numlockx &
@@ -19,7 +19,7 @@ sh .fehbg &
 
 # Startup apps
 trayer --edge top --align right --widthtype percent --width 15 --heighttype pixel --height 10 --SetPartialStrut true --transparent true --alpha 255 --tint 0x000000 --expand true &
-#wicd-client &
+wicd-client &
 pyvolwheel &
 adeskmenu &
 klipper &

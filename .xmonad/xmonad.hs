@@ -43,9 +43,6 @@ main = do
 						className =? "Adeskmenu" --> doFloat,
 						className =? "Pyvolwheel" --> doFloat,
 						className =? "Thunar" --> doFloat,
-						className =? "Gui_test.rb" --> doShift "misc",
-						className =? "Gui_test.rb" --> doFloat,
-						className =? "Krunner" --> doIgnore
 					]
 				<+> manageDocks,
 			layoutHook = myLayout,
