@@ -5,7 +5,8 @@
 # Executed by startx (run your window manager from here)
 
 # Compositing
-cairo-compmgr &
+xcompmgr &
+#cairo-compmgr &
 
 # Daemons
 dropboxd &
@@ -20,7 +21,7 @@ sh .fehbg &
 # Startup apps
 trayer --edge top --align right --widthtype percent --width 15 --heighttype pixel --height 10 --SetPartialStrut true --transparent true --alpha 255 --tint 0x000000 --expand true &
 wicd-client &
-pyvolwheel &
+volwheel &
 adeskmenu &
 klipper &
 kwalletmanager &

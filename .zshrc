@@ -20,7 +20,7 @@ compinit
 
 autoload -U promptinit
 promptinit
-prompt elite green white
+prompt adam2 white green green
 
 # Exports
 export GREP_COLOR="1;33"
@@ -35,6 +35,7 @@ export IRCNICK="exiquio"
 export IRCSERVER="irc.freenode.net"
 export EDITOR="vim"
 export BROWSER="chromium"
+export JAVA_HOME="/opt/java6"
 export JDK_HOME=${JAVA_HOME}
 export JRE_HOME=${JAVA_HOME}
 export USE_CCACHE=1

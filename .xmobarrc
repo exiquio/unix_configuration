@@ -1,5 +1,5 @@
 Config {
-		font = "xft:Dejavu Sans Mono-7:antialiased=true",
+		font = "xft:Dejavu Sans Mono-8:antialiased=true",
 		bgColor = "#000000",
 		fgColor = "#FFFFFF",
 		position = TopW L 85,
@@ -12,7 +12,7 @@ Config {
 			--Run Network "eth0" [] 13,
 			Run Network "wlan0" [] 13,
 			Run Com "iwconfig wlan0 | grep -i essid | awk '{print substr($4, 7, (length($4) - 6))}'" [] "essid" 103,
-			Run Battery ["-L", "35", "--low", "green"] 17,
+			--Run Battery ["-L", "35", "--low", "green"] 17,
 			Run Com "acpi | awk '{print substr($3, 0, (length($3) - 1))}'" [] "battstate" 17,
 			Run Weather "KSAF" ["-L","32","-H","90","--low","green","--high","green","-t","SF,NM: <tempF>F"] 3001,
 			Run Date "%a %b %_d %H:%M" "date" 15,
@@ -20,6 +20,7 @@ Config {
 		],
 		sepChar = "%",
 		alignSep = "}{",
-		template = "%StdinReader% }{ %multicpu% | %cpufreq% | %memory% | %swap% | %wlan0% (%essid%) | %battery% (%battstate%) | %KSAF% | %date%"
+		template = "%StdinReader% }{ %multicpu% | %cpufreq% | %memory% | %swap% | %wlan0% (%essid%) | %KSAF% | %date%"
+		--template = "%StdinReader% }{ %multicpu% | %cpufreq% | %memory% | %swap% | %wlan0% (%essid%) | %battery% (%battstate%) | %KSAF% | %date%"
 		--template = "%StdinReader% }{ %multicpu% | %cpufreq% | %memory% | %swap% | %eth0% | %KSAF% | %date%"
 }
