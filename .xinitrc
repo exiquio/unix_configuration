@@ -14,6 +14,7 @@ thunar --daemon &
 kwalletd &
 
 # Configurations
+# wmname LG3D &
 numlockx &
 xsetroot -cursor_name left_ptr &
 sh .fehbg &
