@@ -22,7 +22,7 @@ sh .fehbg &
 # Startup apps
 trayer --edge top --align right --widthtype percent --width 15 --heighttype pixel --height 10 --SetPartialStrut true --transparent true --alpha 255 --tint 0x000000 --expand true &
 wicd-client &
-volwheel &
+#pyvolwheel &
 adeskmenu &
 klipper &
 kwalletmanager &

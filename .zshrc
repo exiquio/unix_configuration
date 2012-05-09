@@ -40,6 +40,8 @@ export BROWSER="chromium"
 
 export GEM_HOME="${HOME}/.gem/ruby/1.9.1"
 export HEROKU_HOME="/opt/heroku-client"
+export HEROKU_RUN_STATE='development'
+export GOOGLE_API_KEY='AIzaSyDMX-eepk-P8ndmNnmpeDtOIDz5acgo4Kk' # FIXME remove and find a good way to do this externally
 
 export JRUBY_HOME="/opt/jruby"
 export JRUBY_OPTS="--1.8"
@@ -66,6 +68,8 @@ alias ls='ls --color=auto'
 alias open='xdg-open'
 alias xclipboard='xclip -i -selection clipboard'
 alias python='python2.7'
+alias ruby='ruby -w'
+alias chrome='chromium'
 
 # Evals
 eval `dircolors -b`
