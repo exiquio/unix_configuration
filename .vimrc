@@ -25,10 +25,14 @@ set background=dark " we are using a dark background
 syntax on " syntax highlighting on
 syntax keyword xTodo TODO contained
 syntax match xComment /%.*/ contains=xTodo
-syntax keyword xNote NOTE contained
-syntax match xComment /%.*/ contains=xNote
-syntax keyword xRemove REMOVE contained
-syntax match xComment /%.*/ contains=xRemove
+syntax keyword xFixme FIXME contained
+syntax match xComment /%.*/ contains=xFixme
+syntax keyword xOptimize OPTIMIZE contained
+syntax match xComment /%.*/ contains=xOptimize
+syntax keyword xHack HACK contained
+syntax match xComment /%.*/ contains=xHack
+syntax keyword xReview REVIEW contained
+syntax match xComment /%.*/ contains=xReview
 highlight WhiteSpaceEOL ctermbg=darkgreen guibg=lightgreen
 match WhiteSpaceEOL /^\s*\ \s*\|\s\+$/
 autocmd WinEnter * match WhiteSpaceEOL /^\s*\ \s*\|\s\+$/
