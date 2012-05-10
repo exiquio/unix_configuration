@@ -63,9 +63,9 @@ set noerrorbells " don't make noise
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " " Visual Cues
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"highlight OverLength ctermbg=darkgreen ctermfg=white guibg=#000000
-"match OverLength /\%81v.\+/
-"set showmatch " show matching brackets
+highlight OverLength ctermbg=darkgreen ctermfg=white guibg=#000000
+match OverLength /\%81v.\+/
+set showmatch " show matching brackets
 set mat=10 " how many tenths of a second to blink matching brackets for
 set nohlsearch " do not highlight searched for phrases
 set incsearch " BUT do highlight as you type you search phrase
