@@ -33,7 +33,7 @@ set smarttab
 let g:explVertical=1
 let g:explWinSize=35
 let g:winManagerWidth=35
-let g:winManagerWindowLayout = 'FileExplorer,TagsExplorer|BufExplorer' "
+let g:winManagerWindowLayout = 'FileExplorer,TagsExplorer|BufExplorer'
 let g:miniBufExplTabWrap = 1
 let g:miniBufExplModSelTarget = 1
 
