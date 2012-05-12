@@ -1,9 +1,8 @@
 set backup " make backup file
 set backupdir=~/.vimfiles/backup " where to put backup file
 set directory=~/.vimfiles/temp " directory is the directory for temp file
-
 set nocompatible
-syntax on " syntax higighting on
+syntax on
 filetype on
 filetype plugin on
 set history=1000
@@ -14,7 +13,6 @@ set ruler
 set lz
 set backspace=2
 set whichwrap+=<,>,h,l
-set mouse=a
 set noerrorbells
 set showmatch
 set mat=10
@@ -23,27 +21,16 @@ set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%0
 set laststatus=2
 set ai
 set si
-" set cindent
+set cindent
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
 set noexpandtab
 set nowrap
 set smarttab
-let g:explVertical=1
-let g:explWinSize=35
-let g:winManagerWidth=35
-let g:winManagerWindowLayout = 'FileExplorer,TagsExplorer|BufExplorer'
-let g:miniBufExplTabWrap = 1
-let g:miniBufExplModSelTarget = 1
-
 set background=dark
-highlight WhiteSpaceEOL ctermbg=darkgreen guibg=lightgreen
-match WhiteSpaceEOL /^\s*\ \s*\|\s\+$/
-autocmd WinEnter * match WhiteSpaceEOL /^\s*\ \s*\|\s\+$/
-highlight Annotations ctermbg=yellow ctermfg=black
-match Annotations "\(TODO\|FIXME\|OPTIMIZE\|HACK\|REVIEW\):"
-
+match Todo "\(TODO\|FIXME\|OPTIMIZE\|HACK\|REVIEW\):"
+autocmd BufWritePre * :%s/\s\+$//e
 if exists('+colorcolumn')
 	set colorcolumn=80
 else
