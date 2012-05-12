@@ -23,7 +23,7 @@ set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%0
 set laststatus=2
 set ai
 set si
-set cindent
+" set cindent
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
@@ -41,11 +41,11 @@ set background=dark
 highlight WhiteSpaceEOL ctermbg=darkgreen guibg=lightgreen
 match WhiteSpaceEOL /^\s*\ \s*\|\s\+$/
 autocmd WinEnter * match WhiteSpaceEOL /^\s*\ \s*\|\s\+$/
-syn keyword myAnnotations contained TODO: FIXME: OPTIMIZE: HACK: REVIEW:
+highlight Annotations ctermbg=yellow ctermfg=black
+match Annotations "\(TODO\|FIXME\|OPTIMIZE\|HACK\|REVIEW\):"
 
 if exists('+colorcolumn')
 	set colorcolumn=80
 else
-	" Emulate
 	au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%80v.\+', -1)
 endif
