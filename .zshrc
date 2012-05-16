@@ -69,6 +69,7 @@ alias open='xdg-open'
 alias xclipboard='xclip -i -selection clipboard'
 alias python='python2.7'
 alias ruby='ruby -w'
+alias irb='pry'
 alias chrome='chromium'
 
 # Evals

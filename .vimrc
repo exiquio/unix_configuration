@@ -31,6 +31,7 @@ set smarttab
 set background=dark
 match Todo "\(TODO\|FIXME\|OPTIMIZE\|HACK\|REVIEW\):"
 autocmd BufWritePre * :%s/\s\+$//e
+
 if exists('+colorcolumn')
 	set colorcolumn=80
 else
