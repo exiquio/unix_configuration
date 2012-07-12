@@ -37,12 +37,12 @@ main = do
 						className =? "Okular" --> doShift "misc",
 						className =? "SDL_App" --> doShift "misc",
 						className =? "Gimp" --> doShift "misc",
-						className =? "Gimp" --> doFloat,
 						className =? "Visual-regexp" --> doShift "misc",
 						className =? "Visual-regexp" --> doFloat,
 						className =? "Adeskmenu" --> doFloat,
 						className =? "Volwheel" --> doFloat,
-						className =? "Thunar" --> doFloat
+						className =? "Thunar" --> doFloat,
+						className =? "Wicd-client.py" --> doFloat
 					]
 				<+> manageDocks,
 			layoutHook = myLayout,

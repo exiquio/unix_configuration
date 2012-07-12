@@ -41,15 +41,13 @@ export BROWSER="chromium"
 export GEM_HOME="${HOME}/.gem/ruby/1.9.1"
 export HEROKU_HOME="/opt/heroku-client"
 export HEROKU_RUN_STATE='development'
-export GOOGLE_API_KEY='AIzaSyDMX-eepk-P8ndmNnmpeDtOIDz5acgo4Kk' # FIXME remove and find a good way to do this externally
 
 export JRUBY_HOME="/opt/jruby"
 export JRUBY_OPTS="--1.8"
 
-export JAVA_HOME="/opt/java"
-export JDK_HOME=${JAVA_HOME}
-export JRE_HOME=${JAVA_HOME}
-export _JAVA_AWT_WM_NONREPARENTING="1"
+export JAVA_HOME="/opt/java6"
+export J2SDKDIR="/opt/java6"
+#export _JAVA_AWT_WM_NONREPARENTING="1"
 
 
 export USE_CCACHE="1"
@@ -59,7 +57,8 @@ export ADK_HOME="/opt/android-sdk"
 export ANT_HOME="/usr/share/java/apache-ant"
 export PERSONAL_CODE_HOME="${CODE_HOME}/personal"
 export REPOS="${PERSONAL_CODE_HOME}/LinuxScripts:${PERSONAL_CODE_HOME}/BodyBuilder:${DWT_REPO}"
-export PATH="${PATH}:${HOME}/bin:${ADK_HOME}/tools:${ADK_HOME}/platform-tools:${JAVA_HOME}/bin:${GEM_HOME}/bin:${HEROKU_HOME}"
+source /etc/profile
+export PATH="${PATH}:${HOME}/bin:${ADK_HOME}/tools:${ADK_HOME}/platform-tools:/bin:${GEM_HOME}/bin:${HEROKU_HOME}"
 
 # Aliases
 alias cp='cp -v'
@@ -71,6 +70,8 @@ alias python='python2.7'
 alias ruby='ruby -w'
 alias irb='pry'
 alias chrome='chromium'
+alias admin_screen='screen_session.rb admin'
+alias ruby_screen='screen_session.rb ruby'
 
 # Evals
 eval `dircolors -b`
