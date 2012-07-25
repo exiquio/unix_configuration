@@ -21,11 +21,11 @@ set incsearch
 set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
 set laststatus=2
 set tabstop=2
-set softtabstop=2
 set shiftwidth=2
 set noexpandtab
 set nowrap
 set smarttab
+set autoindent
 set background=dark
 
 match Todo "\(TODO\|FIXME\|OPTIMIZE\|HACK\|REVIEW\):"
