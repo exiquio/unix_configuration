@@ -20,7 +20,9 @@ compinit
 
 autoload -U promptinit
 promptinit
-prompt adam2 white green green
+#prompt adam2 white green green
+
+ZSH_THEME=dallas
 
 # Exports
 export GREP_COLOR="1;33"
@@ -47,6 +49,9 @@ export JRUBY_OPTS="--1.8"
 
 export JAVA_HOME="/opt/java6"
 export J2SDKDIR="/opt/java6"
+
+rm "~/code/jackrabbit/hotel_scraper/log/mechanize.log"
+export LOG_MECHANIZE=1
 #export _JAVA_AWT_WM_NONREPARENTING="1"
 
 
@@ -55,23 +60,29 @@ export CODE_HOME="${HOME}/code"
 export DWT_REPO="${CODE_HOME}/dwt"
 export ADK_HOME="/opt/android-sdk"
 export ANT_HOME="/usr/share/java/apache-ant"
+export MYSQL_HOME="/usr/local/mysql/bin"
 export PERSONAL_CODE_HOME="${CODE_HOME}/personal"
 export REPOS="${PERSONAL_CODE_HOME}/LinuxScripts:${PERSONAL_CODE_HOME}/BodyBuilder:${DWT_REPO}"
 source /etc/profile
-export PATH="${PATH}:${HOME}/bin:${ADK_HOME}/tools:${ADK_HOME}/platform-tools:/bin:${GEM_HOME}/bin:${HEROKU_HOME}"
+export PATH="${PATH}:${HOME}/bin:${MYSQL_HOME}:${ADK_HOME}/tools:${ADK_HOME}/platform-tools:/bin:${GEM_HOME}/bin:${HEROKU_HOME}:/opt/local/bin"
+export DYLD_LIBRARY_PATH="/usr/local/mysql/lib:$DYLD_LIBRARY_PATH"
 
 # Aliases
 alias cp='cp -v'
 alias grep='grep --color=auto'
-alias ls='ls --color=auto'
-alias open='xdg-open'
-alias xclipboard='xclip -i -selection clipboard'
-alias python='python2.7'
-alias ruby='ruby -w'
-alias irb='pry'
-alias chrome='chromium'
+alias ls='ls -G'
+#alias open='xdg-open'
+#alias xclipboard='xclip -i -selection clipboard'
+#alias python='python2.7'
+#alias ruby='ruby -w'
+#alias irb='pry'
+#alias chrome='chromium'
+alias vim="/opt/local/bin/vim"
 alias admin_screen='screen_session.rb admin'
-alias ruby_screen='screen_session.rb ruby'
+alias recipe_screen='screen_session.rb recipe'
 
 # Evals
-eval `dircolors -b`
+#eval `dircolors -b`
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+rm "${HOME}/code/jackrabbit/hotel_scraper/log/mechanize.log"

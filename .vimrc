@@ -16,25 +16,25 @@ set backspace=2
 set whichwrap+=<,>,h,l
 set noerrorbells
 set showmatch
-set mat=10
 set incsearch
 set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
 set laststatus=2
-set tabstop=2
-set softtabstop=2
 set shiftwidth=2
-set noexpandtab
+set tabstop=2
+set expandtab
 set nowrap
 set smarttab
+set autoindent
 set background=dark
 
 match Todo "\(TODO\|FIXME\|OPTIMIZE\|HACK\|REVIEW\):"
 autocmd BufWritePre * :%s/\s\+$//e
+autocmd BufWritePre * :retab
 
 if exists('+colorcolumn')
-	set colorcolumn=80
+  set colorcolumn=80
 else
-	au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%80v.\+', -1)
+  BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%80v.\+', -1)
 endif
 
 let g:miniBufExplMapWindowNavVim = 1
