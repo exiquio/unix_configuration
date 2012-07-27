@@ -18,11 +18,14 @@ compinit
 # User Added #
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
-autoload -U promptinit
-promptinit
+#autoload -U promptinit
+#promptinit
 #prompt adam2 white green green
 
+ZSH=$HOME/.oh-my-zsh
 ZSH_THEME=dallas
+plugins=(git)
+source $ZSH/oh-my-zsh.sh
 
 # Exports
 export GREP_COLOR="1;33"
