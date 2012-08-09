@@ -1,3 +1,4 @@
+set encoding=utf-8
 syntax on
 filetype on
 filetype plugin on
@@ -13,7 +14,6 @@ set paste
 set ruler
 set lz
 set backspace=2
-set whichwrap+=<,>,h,l
 set noerrorbells
 set showmatch
 set incsearch
