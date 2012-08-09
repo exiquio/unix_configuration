@@ -23,7 +23,6 @@ set shiftwidth=2
 set tabstop=2
 set expandtab
 set nowrap
-set smarttab
 set autoindent
 set background=dark
 
