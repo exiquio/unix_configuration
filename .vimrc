@@ -23,12 +23,8 @@ set shiftwidth=2
 set tabstop=2
 set expandtab
 set nowrap
-set smarttab
-set smartindent
+set autoindent
 set background=dark
-set autoread
-set showcmd
-
 
 match Todo "\(TODO\|FIXME\|OPTIMIZE\|HACK\|REVIEW\):"
 autocmd BufWritePre * :%s/\s\+$//e
