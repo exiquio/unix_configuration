@@ -1,74 +1,22 @@
-# Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 HISTSIZE=10000
 SAVEHIST=10000
-setopt appendhistory extendedglob nomatch notify
-unsetopt autocd beep
-bindkey -v
-# End of lines configured by zsh-newuser-install
-# The following lines were added by compinstall
-zstyle :compinstall filename '${HOME}/.zshrc'
-
-autoload -Uz compinit
-compinit
-# End of lines added by compinstall
-
-
-###########################################################
-# User Added #
-# # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
-
-#autoload -U promptinit
-#promptinit
-#prompt adam2 white green green
-
 ZSH=$HOME/.oh-my-zsh
 ZSH_THEME=dallas
+
+zstyle :compinstall filename '${HOME}/.zshrc'
+autoload -Uz compinit
+compinit
+
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
-# Exports
-export GREP_COLOR="1;33"
-export LESS_TERMCAP_mb=$'\e[1;31m'
-export LESS_TERMCAP_md=$'\e[1;31m'
-export LESS_TERMCAP_me=$'\e[0m'
-export LESS_TERMCAP_se=$'\e[0m'
-export LESS_TERMCAP_so=$'\e[1;44;33m'
-export LESS_TERMCAP_ue=$'\e[0m'
-export LESS_TERMCAP_us=$'\e[1;32m'
-export IRCNICK="exiquio"
-export IRCSERVER="irc.freenode.net"
-export EDITOR="vim"
-export BROWSER="chromium"
-export GEM_HOME="${HOME}/.gem/ruby/1.9.1"
-export HEROKU_HOME="/opt/heroku-client"
-export HEROKU_RUN_STATE='development'
-export JRUBY_HOME="/opt/jruby"
-export JRUBY_OPTS="--1.8"
-export JAVA_HOME="/opt/java6"
-export J2SDKDIR="/opt/java6"
-#export _JAVA_AWT_WM_NONREPARENTING="1"
-export USE_CCACHE="1"
-export CODE_HOME="${HOME}/code"
-export ADK_HOME="/opt/android-sdk"
-export ANT_HOME="/usr/share/java/apache-ant"
-export MYSQL_HOME="/usr/local/mysql/bin"
-export PERSONAL_CODE_HOME="${CODE_HOME}/personal"
-#export REPOS="${PERSONAL_CODE_HOME}/LinuxScripts:${PERSONAL_CODE_HOME}/BodyBuilder:${DWT_REPO}"
-export PATH="${PATH}:${HOME}/bin:${MYSQL_HOME}:${ADK_HOME}/tools:${ADK_HOME}/platform-tools:/bin:${GEM_HOME}/bin:${HEROKU_HOME}:/opt/local/bin"
+setopt appendhistory extendedglob nomatch notify
+unsetopt autocd beep
 
-# Aliases
-alias cp='cp -v'
+bindkey -v
+
 alias grep='grep --color=auto'
 alias ls='ls -G'
-alias open='xdg-open'
-alias xclipboard='xclip -i -selection clipboard'
-alias python='python2.7'
-alias ruby='ruby -w'
-alias irb='pry'
-alias chrome='chromium'
-
-# Evals
-eval `dircolors -b`
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
