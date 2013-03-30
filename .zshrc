@@ -14,9 +14,8 @@ source $ZSH/oh-my-zsh.sh
 setopt appendhistory extendedglob nomatch notify
 unsetopt autocd beep
 
-bindkey -v
-
+set -o vi
 alias grep='grep --color=auto'
-alias ls='ls -G'
+alias ls='ls --color'
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
