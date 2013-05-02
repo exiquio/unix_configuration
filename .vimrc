@@ -28,15 +28,11 @@ set autoindent
 set background=dark
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
+match ErrorMsg '\%>80v.\+'
 match Todo "\(TODO\|FIXME\|OPTIMIZE\|HACK\|REVIEW\|NOTE\):"
-autocmd BufWritePre * :%s/\s\+$//e
-autocmd BufWritePre * :retab
 
-if exists('+colorcolumn')
-  set colorcolumn=80
-else
-  BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%80v.\+', -1)
-endif
+"autocmd BufWritePre * :%s/\s\+$//e
+"autocmd BufWritePre * :retab
 
 let g:miniBufExplMapWindowNavVim = 1
 let g:miniBufExplMapWindowNavArrows = 1
