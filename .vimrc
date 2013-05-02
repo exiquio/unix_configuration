@@ -26,8 +26,9 @@ set expandtab
 set nowrap
 set autoindent
 set background=dark
+set runtimepath^=~/.vim/bundle/ctrlp.vim
 
-match Todo "\(TODO\|FIXME\|OPTIMIZE\|HACK\|REVIEW\):"
+match Todo "\(TODO\|FIXME\|OPTIMIZE\|HACK\|REVIEW\|NOTE\):"
 autocmd BufWritePre * :%s/\s\+$//e
 autocmd BufWritePre * :retab
 
