@@ -13,9 +13,10 @@ source $ZSH/oh-my-zsh.sh
 
 setopt appendhistory extendedglob nomatch notify
 unsetopt autocd beep
-
 set -o vi
-alias grep='grep --color=auto'
-alias ls='ls --color'
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+alias grep='grep --color=auto'
+alias ls='ls -G'
+alias rake='bundle exec rake'
+
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
