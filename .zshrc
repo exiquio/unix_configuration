@@ -8,7 +8,7 @@ zstyle :compinstall filename '${HOME}/.zshrc'
 autoload -Uz compinit
 compinit
 
-plugins=(git)
+plugins=(git zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
 setopt appendhistory extendedglob nomatch notify
