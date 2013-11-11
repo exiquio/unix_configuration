@@ -1,8 +1,9 @@
-set encoding=utf-8
 syntax on
+
 filetype on
 filetype plugin on
 
+set encoding=utf-8
 set backup
 set backupdir=~/.vimfiles/backup
 set directory=~/.vimfiles/temp
@@ -28,9 +29,15 @@ set autoindent
 set background=dark
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
-match ErrorMsg '\%>80v.\+'
 match Todo "\(TODO\|FIXME\|OPTIMIZE\|HACK\|REVIEW\|NOTE\):"
 
+if exists('+colorcolumn')
+  set colorcolumn=80
+else
+  BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%80v.\+', -1)
+endif
+
+" REVIEW: I personally like these, but it offends others in shared code environments (exiquio)
 "autocmd BufWritePre * :%s/\s\+$//e
 "autocmd BufWritePre * :retab
 
