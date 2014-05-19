@@ -20,6 +20,5 @@ set -o vi
 
 alias grep='grep --color=auto'
 alias ls='ls -G'
-alias bower='noglob bower'
 
-# if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
