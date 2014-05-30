@@ -51,7 +51,7 @@ endif
 
 " Plugins
 set runtimepath^=~/.vim/bundle/ctrlp.vim
-set runtimepath^=~/.vim/bundle/vim-trailing-whitespace
+"set runtimepath^=~/.vim/bundle/vim-trailing-whitespace
 
 " REVIEW: I personally like these, but it offends others in shared code environments (exiquio)
 "autocmd BufWritePre * :%s/\s\+$//e
