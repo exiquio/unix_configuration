@@ -32,7 +32,7 @@ set t_vb=
 set tm=500
 set background=dark
 set encoding=utf-8
-set ffs=unix,dos,mac
+set ffs=unix,mac,dos
 set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
 set laststatus=2
 set nowrap
@@ -42,6 +42,7 @@ set shiftwidth=2
 set tabstop=2
 
 match Todo "\(TODO\|FIXME\|OPTIMIZE\|HACK\|REVIEW\|NOTE\):"
+match ErrorMsg '\s\+$'
 
 if exists('+colorcolumn')
   set colorcolumn=120
@@ -51,7 +52,6 @@ endif
 
 " Plugins
 set runtimepath^=~/.vim/bundle/ctrlp.vim
-"set runtimepath^=~/.vim/bundle/vim-trailing-whitespace
 
 " REVIEW: I personally like these, but it offends others in shared code environments (exiquio)
 "autocmd BufWritePre * :%s/\s\+$//e
