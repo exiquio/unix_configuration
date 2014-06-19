@@ -6,8 +6,9 @@ ZSH=$HOME/.oh-my-zsh
 ZSH_THEME=dallas
 
 zstyle :compinstall filename '${HOME}/.zshrc'
-autoload -Uz compinit
+autoload -U promptinit compinit
 compinit
+promptinit
 
 plugins=(git zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
@@ -22,3 +23,5 @@ alias grep='grep --color=auto'
 alias ls='ls -G'
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+ulimit -n 1024
