@@ -6,8 +6,6 @@ set history=1000
 set autoread
 set viminfo+=!
 set isk+=_,$,@,%,#,-
-
-" Files, backup, and undo
 set backup
 set backupdir=~/.vim/backup
 set directory=~/.vim/temp

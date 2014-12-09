@@ -20,7 +20,8 @@ unsetopt autocd beep
 set -o vi
 
 alias grep='grep --color=auto'
-alias ls='ls -G'
+alias ls='ls --color=auto'
+alias open='xdg-open'
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
