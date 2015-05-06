@@ -11,6 +11,7 @@ set backupdir=~/.vim/backup
 set directory=~/.vim/temp
 
 " UI
+colorscheme vividchalk
 syntax on
 
 set ruler
@@ -39,18 +40,14 @@ set smarttab
 set shiftwidth=2
 set tabstop=2
 
-match Todo "\(TODO\|FIXME\|OPTIMIZE\|HACK\|REVIEW\|NOTE\):"
-match ErrorMsg '\s\+$'
+" TODO: Find a way to hightlight these /TODO\|FIXME\|OPTIMIZE\|HACK\|REVIEW\|NOTE/
 
-if exists('+colorcolumn')
-  set colorcolumn=120
-else
-  BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%80v.\+', -1)
-endif
+autocmd BufRead,BufNewFile *.js setl sw=4 sts=4 et
 
-" Plugins
-set runtimepath^=~/.vim/bundle/ctrlp.vim
+set colorcolumn=80
 
 " REVIEW: I personally like these, but it offends others in shared code environments (exiquio)
 "autocmd BufWritePre * :%s/\s\+$//e
-"autocmd BufWritePre * :retab
+" autocmd BufWritePre * :retab
+
+execute pathogen#infect()

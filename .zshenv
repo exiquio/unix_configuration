@@ -1,5 +1,8 @@
+export SCRIPTS="$HOME/scripts"
+export LOCAL_BIN="$HOME/bin"
+export LOCAL_OPT="$HOME/opt"
+
 export EDITOR='vim'
-export CODE_HOME="${HOME}/Code"
 
 export IRCNICK='exiquio'
 export IRCSERVER='irc.freenode.net'
@@ -14,7 +17,9 @@ export LESS_TERMCAP_so=$'\e[1;44;33m'
 export LESS_TERMCAP_ue=$'\e[0m'
 export LESS_TERMCAP_us=$'\e[1;32m'
 
-export RBENV_VERSION='2.1.4'
+export RBENV_VERSION='2.2.2'
 export RBENV_HOME="$HOME/.rbenv"
 
-export PATH="$RBENV_HOME/bin:$HOME/bin:$PATH"
+export ECLIPSE_HOME="$LOCAL_OPT/eclipse"
+
+export PATH="$SCRIPTS:$RBENV_HOME/bin:$LOCAL_BIN:$ECLIPSE_HOME:$PATH"
