@@ -1,5 +1,5 @@
-" General
 filetype plugin indent on
+syntax on
 
 set nocompatible
 set history=1000
@@ -9,11 +9,6 @@ set isk+=_,$,@,%,#,-
 set backup
 set backupdir=~/.vim/backup
 set directory=~/.vim/temp
-
-" UI
-"colorscheme vividchalk
-syntax on
-
 set ruler
 set backspace=eol,start,indent
 set whichwrap+=<,>,h,l
@@ -38,16 +33,20 @@ set nowrap
 set expandtab
 set smarttab
 set shiftwidth=2
-set tabstop=2
-
-" TODO: Find a way to hightlight these /TODO\|FIXME\|OPTIMIZE\|HACK\|REVIEW\|NOTE/
-
-autocmd BufRead,BufNewFile *.js setl sw=4 sts=4 et
-
+set softtabstop=2
 set colorcolumn=80
+set list
 
-" REVIEW: I personally like these, but it offends others in shared code environments (exiquio)
-"autocmd BufWritePre * :%s/\s\+$//e
-" autocmd BufWritePre * :retab
+autocmd BufRead,BufNewFile *.html setl shiftwidth=4 softtabstop=4 expandtab
+autocmd BufRead,BufNewFile *.js setl shiftwidth=4 softtabstop=4 expandtab
+autocmd BufRead,BufNewFile *.php setl shiftwidth=4 softtabstop=4 expandtab
 
+" NOTE: Document all plugins used via pathogen
+" Currently used plugins
+"
+" * CtrlP-Vim
+" * Vim-Sensible
 execute pathogen#infect()
+
+" TODO: Replace abbreviations with full label
+" TODO: Find a way to hightlight these /TODO\|FIXME\|OPTIMIZE\|HACK\|REVIEW\|NOTE/
