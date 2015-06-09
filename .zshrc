@@ -5,7 +5,7 @@ SAVEHIST=10000
 
 ZSH=$HOME/.oh-my-zsh
 # TODO: Change Theme
-ZSH_THEME=xiong-chiamiov-plus
+ZSH_THEME=ys
 
 zstyle :compinstall filename '${HOME}/.zshrc'
 autoload -U promptinit compinit
@@ -22,7 +22,8 @@ unsetopt autocd beep
 set -o vi
 
 alias grep='grep --color=auto'
-alias ls='ls --color=auto'
+alias ls="ls -G"
+#alias ls='ls --color=auto'
 #alias open='xdg-open'
 #alias xclip='xclip -selection -c'
 #alias pacman='pacmatic'

@@ -11,7 +11,7 @@ set backupdir=~/.vim/backup
 set directory=~/.vim/temp
 
 " UI
-colorscheme vividchalk
+"colorscheme vividchalk
 syntax on
 
 set ruler
