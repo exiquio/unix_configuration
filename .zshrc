@@ -28,7 +28,7 @@ alias ls="ls -G"
 #alias xclip='xclip -selection -c'
 #alias pacman='pacmatic'
 
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+#if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 ulimit -n 1024
 
