@@ -46,7 +46,7 @@ autocmd BufRead,BufNewFile *.php setl shiftwidth=4 softtabstop=4 expandtab
 "
 " * CtrlP-Vim
 " * Vim-Sensible
-execute pathogen#infect()
+" execute pathogen#infect()
 
 " TODO: Replace abbreviations with full label
 " TODO: Find a way to hightlight these /TODO\|FIXME\|OPTIMIZE\|HACK\|REVIEW\|NOTE/
