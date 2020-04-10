@@ -14,7 +14,7 @@ unsetopt autocd beep
 set -o vi
 
 alias grep='grep --color=auto'
-alias ls="ls -G"
+alias ls="ls --color"
 
 ulimit -n 1024
 
