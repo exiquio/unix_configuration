@@ -22,6 +22,7 @@ alias vim="nvim"
 
 ulimit -n 1024
 
+export TERM=xterm-256color
 export PATH="$PATH"
 
 #source $HOME/.zshenv_private
