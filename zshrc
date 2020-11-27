@@ -17,6 +17,8 @@ set -o vi
 
 alias grep='grep --color=auto'
 alias ls="ls --color"
+# TODO: nvim aliases
+alias vim="nvim"
 
 ulimit -n 1024
 
