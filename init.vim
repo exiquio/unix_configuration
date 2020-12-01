@@ -1,3 +1,5 @@
+""" SETTINGS
+
 " Turn on syntax hilighting
 syntax on
 
