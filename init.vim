@@ -43,4 +43,8 @@ set wildmode=full
 "autocmd BufRead,BufNewFile *.html setl shiftwidth=4 softtabstop=4 expandtab
 "autocmd BufRead,BufNewFile *.php setl shiftwidth=4 softtabstop=4 expandtab
 
+""" MAPPINGS
+" Map <Esc> to return to normal mode in terminal
+tnoremap <Esc> <C-\><C-n>
+
 " TODO: Find a way to hightlight these /TODO\|FIXME\|OPTIMIZE\|HACK\|REVIEW\|NOTE/
