@@ -1,5 +1,7 @@
 """ SETTINGS
 
+" GENERAL
+
 " Turn on syntax hilighting
 syntax on
 
@@ -38,12 +40,25 @@ set whichwrap+=<,>,h,l
 set wildmenu
 set wildmode=full
 
+" PER FILE TYPE
+
 " TODO: Revisit based upon style guide
 " Override tab settings for specific languages
 "autocmd BufRead,BufNewFile *.html setl shiftwidth=4 softtabstop=4 expandtab
 "autocmd BufRead,BufNewFile *.php setl shiftwidth=4 softtabstop=4 expandtab
 
-""" MAPPINGS
+""" KEY MAPPINGS
+
+" NORMAL
+
+" Map shortcuts for traversing buffer
+nnoremap <silent> [b :bprevious<CR>
+nnoremap <silent> ]b :bnext<CR>
+nnoremap <silent> [B :bfirst<CR>
+nnoremap <silent> ]B :blast<CR>
+
+" TERMINAL
+
 " Map <Esc> to return to normal mode in terminal
 tnoremap <Esc> <C-\><C-n>
 
