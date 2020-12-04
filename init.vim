@@ -27,6 +27,8 @@ set list
 set magic
 " Do not wrap lines
 set nowrap
+" Set toggle for paste mode
+set pastetoggle=<f5>
 " Show matching braces
 set showmatch
 set mat=2 " How many seconds to blink
