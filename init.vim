@@ -56,6 +56,9 @@ nnoremap <silent> ]b :bnext<CR>
 nnoremap <silent> [B :bfirst<CR>
 nnoremap <silent> ]B :blast<CR>
 
+" Map shortcut for very magic regex
+nnoremap <A-/> /\v
+
 " TERMINAL
 
 " Map <Esc> to return to normal mode in terminal
