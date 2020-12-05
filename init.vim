@@ -55,7 +55,8 @@ nnoremap <silent> [b :bprevious<CR>
 nnoremap <silent> ]b :bnext<CR>
 nnoremap <silent> [B :bfirst<CR>
 nnoremap <silent> ]B :blast<CR>
-
+" Map shortcut to mute search hilighting
+nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 " Map shortcut for very magic regex
 nnoremap <A-/> /\v
 
