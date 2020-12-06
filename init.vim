@@ -58,11 +58,19 @@ nnoremap <A-/> /\v
 " Map <Esc> to return to normal mode in terminal
 tnoremap <Esc> <C-\><C-n>
 
-" TODO: Find a way to hightlight these /TODO\|FIXME\|OPTIMIZE\|HACK\|REVIEW\|NOTE/
+""" PLUGINS
 
-" TODO: Figure out something better than making the following list.
-" Plugins used:
-"   vim-unimpaired
-"
-" Optional plugin
-"   vim-scriptease
+" Load and initialize minpac
+packadd minpac
+call minpac#init()
+" Add plugins
+call minpac#add('tpope/vim-unimpaired')
+" Add optional plugins
+call minpac#add('k-takata/minpac', {'type': 'opt'})
+call minpac#add('tpope/vim-scriptease', {'type': 'opt'})
+
+" MINPAC COMMANDS
+command! PackUpdate call minpac#update()
+command! PackClean call minpac#clean()
+
+" TODO: Find a way to hightlight these /TODO\|FIXME\|OPTIMIZE\|HACK\|REVIEW\|NOTE/
