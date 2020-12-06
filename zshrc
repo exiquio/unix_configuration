@@ -24,6 +24,8 @@ ulimit -n 1024
 
 export PATH="$PATH"
 export TERM=xterm-256color
+export VIMCONFIG=~/.config/nvim
+export VIMDATA=~/.local/share/nvim
 export VISUAL=nvim
 
 #source $HOME/.zshenv_private
