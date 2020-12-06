@@ -59,3 +59,7 @@ nnoremap <A-/> /\v
 tnoremap <Esc> <C-\><C-n>
 
 " TODO: Find a way to hightlight these /TODO\|FIXME\|OPTIMIZE\|HACK\|REVIEW\|NOTE/
+
+" TODO: Figure out something better than making the following list.
+" Plugins used:
+"   vim-unimpaired
