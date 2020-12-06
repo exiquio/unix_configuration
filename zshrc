@@ -17,13 +17,14 @@ set -o vi
 
 alias grep='grep --color=auto'
 alias ls="ls --color"
-# TODO: nvim aliases
 alias vim="nvim"
+alias vi="nvim"
 
 ulimit -n 1024
 
-export TERM=xterm-256color
 export PATH="$PATH"
+export TERM=xterm-256color
+export VISUAL=nvim
 
 #source $HOME/.zshenv_private
 
