@@ -22,7 +22,7 @@ alias vi="nvim"
 
 ulimit -n 1024
 
-export PATH="$PATH"
+export PATH="$PATH:/home/exiquio/.local/bin:"
 export TERM=xterm-256color
 export VIMCONFIG=~/.config/nvim
 export VIMDATA=~/.local/share/nvim
