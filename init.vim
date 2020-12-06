@@ -65,6 +65,7 @@ packadd minpac
 call minpac#init()
 " Add plugins
 call minpac#add('tpope/vim-unimpaired')
+call minpac#add('junegunn/fzf')
 " Add optional plugins
 call minpac#add('k-takata/minpac', {'type': 'opt'})
 call minpac#add('tpope/vim-scriptease', {'type': 'opt'})
