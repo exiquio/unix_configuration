@@ -63,3 +63,6 @@ tnoremap <Esc> <C-\><C-n>
 " TODO: Figure out something better than making the following list.
 " Plugins used:
 "   vim-unimpaired
+"
+" Optional plugin
+"   vim-scriptease
