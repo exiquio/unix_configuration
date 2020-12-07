@@ -1,0 +1,6 @@
+# NOTE:
+#   For examples see:
+#     https://github.com/github/gitignore/blob/master/C.gitignore
+
+# ctags file
+tags
