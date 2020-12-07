@@ -3,6 +3,7 @@
   email = exiquio@gmail.com
 [core]
   editor = vim
+  excludesfile = ~/.gitignore
 [merge]
   tool = vimdiff
   conflictstyle = diff3
@@ -11,3 +12,5 @@
   branch = auto
   interactive = auto
   diff = auto
+[init]
+  templatedir = ~/.git_template

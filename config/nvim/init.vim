@@ -39,7 +39,7 @@ set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%0
 " Wrap left and right movements
 set whichwrap+=<,>,h,l
 
-" PER FILE TYPE
+""" AUTO COMMANDS
 
 " TODO: Revisit based upon style guide
 " Override tab settings for specific languages
@@ -56,6 +56,8 @@ nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 nnoremap <A-/> /\v
 " Shortcut for fzf
 nnoremap <C-p> :<C-u>FZF<CR>
+" Shortcut for ctags indexing
+nnoremap <f5> :!ctags -R<CR>
 
 " TERMINAL
 
