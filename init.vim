@@ -62,12 +62,14 @@ tnoremap <Esc> <C-\><C-n>
 
 """ PLUGINS
 
+" NOTE: Plugins are managed by minpac
 " Load and initialize minpac
 packadd minpac
 call minpac#init()
 " Add plugins
-call minpac#add('tpope/vim-unimpaired')
 call minpac#add('junegunn/fzf', {'do': {-> fzf#install()}})
+call minpac#add('tpope/vim-projectionist')
+call minpac#add('tpope/vim-unimpaired')
 " Add optional plugins
 call minpac#add('k-takata/minpac', {'type': 'opt'})
 call minpac#add('tpope/vim-scriptease', {'type': 'opt'})
