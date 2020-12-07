@@ -50,6 +50,8 @@ set whichwrap+=<,>,h,l
 
 " NORMAL
 
+" Map shortcut for muting hilight piggy backing <C-l>
+nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 " Map shortcut for very magic regex
 nnoremap <A-/> /\v
 " Shortcut for fzf
