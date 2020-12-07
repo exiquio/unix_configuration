@@ -52,6 +52,8 @@ set whichwrap+=<,>,h,l
 
 " Map shortcut for very magic regex
 nnoremap <A-/> /\v
+" Shortcut for fzf
+nnoremap <C-p> :<C-u>FZF<CR>
 
 " TERMINAL
 
