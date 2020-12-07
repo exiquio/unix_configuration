@@ -22,11 +22,11 @@ alias vi="nvim"
 
 ulimit -n 1024
 
-export PATH="$PATH:/home/exiquio/.local/bin:$VIMCONFIG/pack/bundle/start/fzf/bin"
 export TERM=xterm-256color
 export VIMCONFIG=~/.config/nvim
 export VIMDATA=~/.local/share/nvim
 export VISUAL=nvim
+export PATH="$PATH:/home/exiquio/.local/bin:$VIMCONFIG/pack/minpac/start/fzf/bin"
 
 #source $HOME/.zshenv_private
 
