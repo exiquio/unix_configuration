@@ -76,6 +76,8 @@ nnoremap <Leader>* :Grepper -cword -noprompt<CR>
 " Search for current selection
 nmap gs <plug>(GrepperOperator)
 xmap gs <plug>(GrepperOperator)
+" Shortcuts to Grepper prompt
+nnoremap <Leader>g :Grepper -tool rg<CR>
 
 " TERMINAL MODE
 
