@@ -48,24 +48,38 @@ set whichwrap+=<,>,h,l
 
 """ KEY MAPPINGS
 
-" NORMAL
+" NORMAL MODE
 
+" General
 " Map shortcut for muting hilight piggy backing <C-l>
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 " Map shortcut for very magic regex
 nnoremap <A-/> /\v
-" Shortcut for fzf
-nnoremap <C-p> :<C-u>FZF<CR>
-" Shortcut for ctags indexing
+
+" ctags
+" Generate tags
 nnoremap <f5> :!ctags -R<CR>
-" Shortcuts for ale
+
+" Ale
 nmap <silent> [w <Plug>(ale_previous)
 nmap <silent> ]w <Plug>(ale_next)
 nmap <silent> [W <Plug>(ale_first)
 nmap <silent> ]W <Plug>(ale_last)
 
-" TERMINAL
+" fzf
+" Fuzzy file search
+nnoremap <C-p> :<C-u>FZF<CR>
 
+" vim-grepper
+" Search for the current word
+nnoremap <Leader>* :Grepper -cword -noprompt<CR>
+" Search for current selection
+nmap gs <plug>(GrepperOperator)
+xmap gs <plug>(GrepperOperator)
+
+" TERMINAL MODE
+
+" General
 " Map <Esc> to return to normal mode in terminal
 tnoremap <Esc> <C-\><C-n>
 
@@ -75,13 +89,16 @@ tnoremap <Esc> <C-\><C-n>
 " Load and initialize minpac
 packadd minpac
 call minpac#init()
+
 " Add plugins
 call minpac#add('dense-analysis/ale')
 call minpac#add('junegunn/fzf', {'do': {-> fzf#install()}})
+call minpac#add('mhinz/vim-grepper')
 call minpac#add('radenling/vim-dispatch-neovim')
 call minpac#add('tpope/vim-dispatch')
 call minpac#add('tpope/vim-projectionist')
 call minpac#add('tpope/vim-unimpaired')
+
 " Add optional plugins
 call minpac#add('k-takata/minpac', {'type': 'opt'})
 call minpac#add('tpope/vim-scriptease', {'type': 'opt'})
@@ -97,5 +114,9 @@ command! PackClean call minpac#clean()
 let g:ale_linters = {
 \ 'javascript': ['eslint']
 \}
+
+" vim-grepper
+let g:grepper = {}
+let g:grepper.tools = ['grep', 'git', 'rg']
 
 " TODO: Find a way to hightlight these /TODO\|FIXME\|OPTIMIZE\|HACK\|REVIEW\|NOTE/
