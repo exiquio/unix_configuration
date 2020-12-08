@@ -72,6 +72,8 @@ packadd minpac
 call minpac#init()
 " Add plugins
 call minpac#add('junegunn/fzf', {'do': {-> fzf#install()}})
+call minpac#add('radenling/vim-dispatch-neovim')
+call minpac#add('tpope/vim-dispatch')
 call minpac#add('tpope/vim-projectionist')
 call minpac#add('tpope/vim-unimpaired')
 " Add optional plugins
