@@ -117,6 +117,6 @@ let g:ale_linters = {
 
 " vim-grepper
 let g:grepper = {}
-let g:grepper.tools = ['grep', 'git', 'rg']
+let g:grepper.tools = ['rg', 'git']
 
 " TODO: Find a way to hightlight these /TODO\|FIXME\|OPTIMIZE\|HACK\|REVIEW\|NOTE/
