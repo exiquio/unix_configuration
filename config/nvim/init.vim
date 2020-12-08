@@ -54,7 +54,7 @@ set whichwrap+=<,>,h,l
 " Map shortcut for muting hilight piggy backing <C-l>
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 " Map shortcut for very magic regex
-nnoremap <A-/> /\v
+nnoremap <Leader>o /\v
 
 " ctags
 " Generate tags
