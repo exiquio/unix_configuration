@@ -17,6 +17,7 @@ set -o vi
 
 alias grep='grep --color=auto'
 alias ls="ls --color"
+alias rg="rg -H --no-heading"
 alias vim="nvim"
 alias vi="nvim"
 
