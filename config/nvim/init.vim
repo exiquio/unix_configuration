@@ -58,6 +58,11 @@ nnoremap <A-/> /\v
 nnoremap <C-p> :<C-u>FZF<CR>
 " Shortcut for ctags indexing
 nnoremap <f5> :!ctags -R<CR>
+" Shortcuts for ale
+nmap <silent> [w <Plug>(ale_previous)
+nmap <silent> ]w <Plug>(ale_next)
+nmap <silent> [W <Plug>(ale_first)
+nmap <silent> ]W <Plug>(ale_last)
 
 " TERMINAL
 
@@ -71,6 +76,7 @@ tnoremap <Esc> <C-\><C-n>
 packadd minpac
 call minpac#init()
 " Add plugins
+call minpac#add('dense-analysis/ale')
 call minpac#add('junegunn/fzf', {'do': {-> fzf#install()}})
 call minpac#add('radenling/vim-dispatch-neovim')
 call minpac#add('tpope/vim-dispatch')
@@ -83,5 +89,13 @@ call minpac#add('tpope/vim-scriptease', {'type': 'opt'})
 " MINPAC COMMANDS
 command! PackUpdate call minpac#update()
 command! PackClean call minpac#clean()
+
+" PLUGIN SETTINGS
+
+" Ale
+" Define linters
+let g:ale_linters = {
+\ 'javascript': ['eslint']
+\}
 
 " TODO: Find a way to hightlight these /TODO\|FIXME\|OPTIMIZE\|HACK\|REVIEW\|NOTE/
