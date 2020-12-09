@@ -84,6 +84,8 @@ nnoremap <Leader>g :Grepper -tool rg<CR>
 " General
 " Map <Esc> to return to normal mode in terminal
 tnoremap <Esc> <C-\><C-n>
+" Map <C-v><Esc> to <Esc>
+tnoremap <C-v><Esc> <Esc>
 
 """ PLUGINS
 
