@@ -98,6 +98,7 @@ packadd minpac
 call minpac#init()
 
 " Add plugins
+"call minpac#add('autozimu/LanguageClient-neovim', )
 call minpac#add('dense-analysis/ale')
 call minpac#add('junegunn/fzf', {'do': {-> fzf#install()}})
 call minpac#add('mhinz/vim-grepper')
@@ -115,6 +116,7 @@ call minpac#add('tpope/vim-scriptease', {'type': 'opt'})
 " MINPAC COMMANDS
 command! PackUpdate call minpac#update()
 command! PackClean call minpac#clean()
+command! PackStatus call minpac#status()
 
 " PLUGIN SETTINGS
 
