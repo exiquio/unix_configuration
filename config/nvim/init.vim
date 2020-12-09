@@ -94,7 +94,6 @@ call minpac#init()
 
 " Add plugins
 call minpac#add('dense-analysis/ale')
-call minpac#add('janko-m/vim-test')
 call minpac#add('junegunn/fzf', {'do': {-> fzf#install()}})
 call minpac#add('mhinz/vim-grepper')
 call minpac#add('radenling/vim-dispatch-neovim')
