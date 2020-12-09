@@ -79,6 +79,9 @@ xmap gs <plug>(GrepperOperator)
 " Shortcuts to Grepper prompt
 nnoremap <Leader>g :Grepper -tool rg<CR>
 
+" vim-obsession
+nnoremap <Leader>s :Obsession<CR>
+
 " TERMINAL MODE
 
 " General
@@ -100,6 +103,7 @@ call minpac#add('junegunn/fzf', {'do': {-> fzf#install()}})
 call minpac#add('mhinz/vim-grepper')
 call minpac#add('radenling/vim-dispatch-neovim')
 call minpac#add('tpope/vim-dispatch')
+call minpac#add('tpope/vim-obsession')
 call minpac#add('tpope/vim-projectionist')
 call minpac#add('tpope/vim-unimpaired')
 

@@ -2,5 +2,7 @@
 #   For examples see:
 #     https://github.com/github/gitignore/blob/master/C.gitignore
 
+# Vim sessions
+Session.vim
 # ctags file
 tags
