@@ -67,8 +67,14 @@ nmap <silent> [W <Plug>(ale_first)
 nmap <silent> ]W <Plug>(ale_last)
 
 " fzf
-" Fuzzy file search
+" Fuzzy  file search
 nnoremap <C-p> :<C-u>FZF<CR>
+
+" LangaugeClient-neovim
+nmap <F5> <Plug>(lcn-menu)
+nmap <silent> <Leader>h <Plug>(lcn-hover)
+nmap <silent> <F2> <Plug>(lcn-rename)
+nmap <silent> gd <Plug>(lcn-definition)
 
 " vim-grepper
 " Search for the current word
@@ -98,7 +104,7 @@ packadd minpac
 call minpac#init()
 
 " Add plugins
-"call minpac#add('autozimu/LanguageClient-neovim', )
+call minpac#add('autozimu/LanguageClient-neovim', {'branch': 'next', 'do': {-> system('bash install.sh')}}) " TODO Replace when 0.5 becomes stable
 call minpac#add('dense-analysis/ale')
 call minpac#add('junegunn/fzf', {'do': {-> fzf#install()}})
 call minpac#add('mhinz/vim-grepper')
@@ -123,11 +129,19 @@ command! PackStatus call minpac#status()
 " Ale
 " Define linters
 let g:ale_linters = {
-\ 'javascript': ['eslint']
-\}
+      \ 'javascript': ['eslint']
+      \ }
+
+" LanguageClient-neovim
+" Language servers
+let g:LanguageClient_serverCommands = {
+      \ 'javascript': ['js-langserver', '--stdio']
+      \ }
 
 " vim-grepper
 let g:grepper = {}
 let g:grepper.tools = ['rg', 'git']
 
 " TODO: Find a way to hightlight these /TODO\|FIXME\|OPTIMIZE\|HACK\|REVIEW\|NOTE/
+" TODO: Implement Neovim's built in LSP support when version 0.5 becomes
+" stable.
