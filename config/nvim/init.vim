@@ -110,6 +110,7 @@ call minpac#add('junegunn/fzf', {'do': {-> fzf#install()}})
 call minpac#add('mhinz/vim-grepper')
 call minpac#add('radenling/vim-dispatch-neovim')
 call minpac#add('sgur/vim-editorconfig')
+call minpac#add('Shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'})
 call minpac#add('tpope/vim-dispatch')
 call minpac#add('tpope/vim-obsession')
 call minpac#add('tpope/vim-projectionist')
@@ -131,6 +132,9 @@ command! PackStatus call minpac#status()
 let g:ale_linters = {
       \ 'javascript': ['eslint']
       \ }
+
+" Use deoplete
+let g:deoplete#enable_at_startup = 1
 
 " LanguageClient-neovim
 " Language servers
