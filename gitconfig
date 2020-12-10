@@ -17,3 +17,5 @@
   diff = auto
 [init]
   templatedir = ~/.git_template
+[credential]
+  helper = cache
