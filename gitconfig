@@ -4,9 +4,12 @@
 [core]
   editor = vim
   excludesfile = ~/.gitignore
+[mergetool "nvim"]
+  cmd = nvim -f -c \"Gdiffsplit!\" \"$MERGED\"
 [merge]
-  tool = vimdiff
-  conflictstyle = diff3
+  tool = nvim
+[mergetool]
+  prompt = false
 [color]
   status = auto
   branch = auto

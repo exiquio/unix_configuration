@@ -35,7 +35,7 @@ set mat=2 " How many seconds to blink
 " Automatic ingore case switchh
 set smartcase
 " Tried and true status line settings
-set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
+set statusline=%F%m%r%h%w\ %{FugitiveStatusline()}\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
 " Wrap left and right movements
 set whichwrap+=<,>,h,l
 
@@ -112,6 +112,7 @@ call minpac#add('radenling/vim-dispatch-neovim')
 call minpac#add('sgur/vim-editorconfig')
 call minpac#add('Shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'})
 call minpac#add('tpope/vim-dispatch')
+call minpac#add('tpope/vim-fugitive')
 call minpac#add('tpope/vim-obsession')
 call minpac#add('tpope/vim-projectionist')
 call minpac#add('tpope/vim-unimpaired')
