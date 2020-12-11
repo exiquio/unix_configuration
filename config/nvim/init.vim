@@ -133,6 +133,10 @@ command! PackStatus call minpac#status()
 let g:ale_linters = {
       \ 'javascript': ['eslint']
       \ }
+# Define fixers
+let g:ale_fixers = {
+      \ 'javascript': ['eslint']
+      \}
 
 " Use deoplete
 let g:deoplete#enable_at_startup = 1
