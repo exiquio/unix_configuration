@@ -133,7 +133,7 @@ command! PackStatus call minpac#status()
 let g:ale_linters = {
       \ 'javascript': ['eslint']
       \ }
-# Define fixers
+" Define fixers
 let g:ale_fixers = {
       \ 'javascript': ['eslint']
       \}
